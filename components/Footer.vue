@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-[#232323] text-white p-2 mt-2 ">
+  <footer class="py-30 mt-2 bg-[#232323] text-white">
     <div class="container">This is the footer</div>
-  </div>
+  </footer>
 </template>
 
 <script>
 export default {
-  name: "VFooter"
+  name: 'VFooter'
 };
 </script>

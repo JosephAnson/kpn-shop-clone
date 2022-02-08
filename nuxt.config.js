@@ -3,15 +3,15 @@ export default {
   head: {
     title: 'kpn-coding-challenge',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'format-detection', content: 'telephone=no' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -29,7 +29,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    'nuxt-windicss',
+    'nuxt-windicss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -40,7 +40,7 @@ export default {
     '@nuxtjs/axios',
     // https://github.com/anteriovieira/nuxt-material-design-icons
     'nuxt-material-design-icons',
-    '~/modules/phones/index.js',
+    '~/modules/phones/index.js'
   ],
 
   // Router Config
@@ -49,21 +49,19 @@ export default {
       routes.push({
         name: 'index',
         path: '/',
-        redirect: '/phones',
-      })
-    },
+        redirect: '/phones'
+      });
+    }
   },
 
-  serverMiddleware: [
-    { path: '/api', handler: '~/server-middleware/products.js' },
-  ],
+  serverMiddleware: [{ path: '/api', handler: '~/server-middleware/products.js' }],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: '/'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
-}
+  build: {}
+};

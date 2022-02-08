@@ -1,17 +1,19 @@
 <template>
   <div>
     <Header />
-    <Nuxt />
+    <main class="pt-4 pb-12">
+      <Nuxt />
+    </main>
     <Footer />
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: "ShopLayout",
+  name: 'ShopLayout',
   head: {
     bodyAttrs: {
-      class: "bg-gray-100"
+      class: 'bg-gray-100'
     }
   }
 };

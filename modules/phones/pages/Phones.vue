@@ -1,60 +1,72 @@
 <template>
-  <main>
-    <div class="container">
-      <div class="product-filters bg-white border p-3 rounded flex justify-between">
-        <div class="flex">
-          <div v-for="(filter, key) of filterCounts" :key="key" class="filter mr-2">
-            <MultiSelect
-              :value="filters[key]"
-              :options="createFilter(filter)"
-              @update:value="setFilter(key, $event)">{{ key }}
-            </MultiSelect>
-          </div>
-        </div>
-        <div class="product-sort flex items-center">
-          <label class="mr-2">Sort</label>
-          <select
-            v-model="sort"
-            class="w-full bg-white border border-gray-300 pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-            <option v-for="option in sortOptions" :key="option.key" :value="option.value">{{ option.label }}</option>
-          </select>
-        </div>
-      </div>
-      <div class="products flex flex-wrap overflow-hidden md:-mx-3">
-        <template v-for="product in visibleProducts">
-          <Handset
-            :key="product.id"
-            :name="product.name"
-            :manufacturer="product.manufacturer"
-            :variants="product.variants"
-          />
-        </template>
+  <div class="container">
+    <p class="text-secondary-600 mt-6 mb-6 text-[32px] md:text-[44px]">
+      <span>Kies uit </span> <span class="font-bold">{{ totalPhones }} telefones</span>
+    </p>
+    <MobilePhoneFilter
+      :value="filters"
+      :filtered-products="products"
+      :total-phones="totalPhones"
+      @update:value="filters = $event"
+      @update:sort="sort = $event"
+    />
+
+    <div class="product-filters hidden justify-between rounded border bg-white p-3 md:flex">
+      <PhoneFilter
+        :value="filters"
+        :filtered-products="products"
+        @update:value="filters = $event"
+      />
+
+      <div class="product-sort flex items-center">
+        <label class="mr-2">Sort</label>
+        <select
+          v-model="sort"
+          class="w-full cursor-default border border-gray-300 bg-white py-2 pl-3 pr-10 text-left focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
+        >
+          <option v-for="option in sortOptions" :key="option.key" :value="option.value">
+            {{ option.label }}
+          </option>
+        </select>
       </div>
     </div>
-  </main>
+    <div class="products flex flex-wrap overflow-hidden md:-mx-3">
+      <template v-for="product in sortedAndFilteredProducts">
+        <Handset
+          :key="product.id"
+          :name="product.name"
+          :manufacturer="product.manufacturer"
+          :variants="product.variants"
+        />
+      </template>
+    </div>
+    <portal-target name="phones-footer"></portal-target>
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import orderBy from "lodash/orderBy";
-import { Context } from "@nuxt/types";
-import { NuxtError } from "@nuxt/types/app";
-import Handset from "../components/Handset.vue";
-import { Phone } from "~/modules/phones/types";
-import phoneFilterCount from "~/modules/phones/utils/filterCount";
-import MultiSelect, { MultiSelectOption } from "~/components/MultiSelect.vue";
+import Vue from 'vue';
+import { Context } from '@nuxt/types';
+import { NuxtError } from '@nuxt/types/app';
+import orderBy from 'lodash/orderBy';
+import Handset from '../components/Handset.vue';
+import { Phone } from '~/modules/phones/types';
+import PhoneFilter from '~/modules/phones/components/PhoneFilter.vue';
+import MobilePhoneFilter from '~/modules/phones/components/MobilePhoneFilter.vue';
+import { sortOptions } from '~/modules/phones/constants';
 
 export default Vue.extend({
-  name: "TelefonsPage",
+  name: 'PhonesPage',
   components: {
-    MultiSelect,
+    PhoneFilter,
+    MobilePhoneFilter,
     Handset
   },
-  layout: "shop",
+  layout: 'shop',
   async asyncData({ $axios, error }: Context) {
     try {
       // Using the nuxtjs/http module here exposed via context.app
-      const response = await $axios.$get("http://localhost:3000/api/products");
+      const response = await $axios.$get('http://localhost:3000/api/products');
       const products: Phone[] = response.results.products;
 
       return { products };
@@ -65,71 +77,75 @@ export default Vue.extend({
   },
   data() {
     return {
-      sort: "sort_order",
-      sortOptions: [
-        {
-          label: "Most Sold",
-          value: "sort_order"
-        },
-        {
-          label: "New",
-          value: "release_date"
-        },
-        {
-          label: "Action",
-          value: "has_promotion"
-        }
-      ],
-      filters: {}
+      products: [] as Phone[],
+      sort: sortOptions[0].value,
+      sortOptions,
+      filters: {
+        manufacturer: ['Fairphone']
+      }
     };
   },
   computed: {
+    totalPhones() {
+      return (this as any).filteredProducts.length;
+    },
     filteredProducts(): Phone[] {
       const query = this.buildFilter(this.filters);
-      const keysWithArrays = ["colors"];
-      const keysWithYesNo = ["has_5g", "has_esim", "refurbished"];
+      const keysWithArrays = ['colors'];
+      const keysWithYesNo = ['has_5g', 'has_esim', 'refurbished'];
 
-      return this.products.filter((product: Phone) => {
+      return this.products.filter((product: Record<string, any>) => {
         for (const key in query) {
+          // Skip if undefined
           if (product[key] === undefined) {
             return false;
-          } else if (keysWithArrays.includes(key)) {
-            return product[key].some(item => query[key].includes(item));
-          } else if (keysWithYesNo.includes(key)) {
-            return product[key] === true && query[key].includes("yes") || product[key] === true && query[key].includes("no");
-          } else if (!query[key].includes(product[key])) {
+          }
+
+          // If property is array we should check each against the filter
+          if (keysWithArrays.includes(key)) {
+            return product[key].some((item: string) => query[key].includes(item));
+          }
+
+          // If filter is yes or no we should check it matches the boolean equivalent
+          if (keysWithYesNo.includes(key)) {
+            return (
+              (product[key] === true && query[key].includes('yes')) ||
+              (product[key] === false && query[key].includes('no'))
+            );
+          }
+
+          // Finally check it matches the single value of the property
+          if (!query[key].includes(product[key])) {
             return false;
           }
         }
         return true;
       });
     },
-    visibleProducts(): Phone[] {
-      return orderBy(this.filteredProducts, this.sort);
-    },
-    filterCounts() {
-      return phoneFilterCount(this.filteredProducts);
+    sortedAndFilteredProducts(): Phone[] {
+      switch (this.sort) {
+        case 'release_date':
+          return [...this.filteredProducts].sort((first, second) => {
+            return new Date(first.release_date).getTime() - new Date(second.sort_order).getTime();
+          });
+        case 'has_promotion':
+          return orderBy(this.filteredProducts, [this.sort, 'sort_order'], ['desc', 'asc']);
+        case 'sort_order':
+          return orderBy(this.filteredProducts, ['sort_order'], ['asc']);
+        default:
+          return orderBy(this.filteredProducts, ['sort_order'], ['asc']);
+      }
     }
   },
   methods: {
-    buildFilter(filter: Record<string, string>) {
-      const query: Record<string, string> = {};
+    buildFilter(filter: Record<string, string[]>) {
+      const query: Record<string, string[]> = {};
       for (const keys in filter) {
         if (filter[keys].constructor === Array && filter[keys].length > 0) {
           query[keys] = filter[keys];
         }
       }
       return query;
-    },
-    createFilter(options: Record<string, number>): MultiSelectOption[] {
-      return Object.entries(options).map(([key, count]) => ({
-        value: key,
-        label: `${key} (${count})`,
-        checked: false
-      }));
-    },
-    setFilter(key: string, values: string[]) {
-      Vue.set(this.filters, key, values);
     }
   }
 });

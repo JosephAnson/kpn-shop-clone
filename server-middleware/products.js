@@ -1,7 +1,7 @@
-const express = require('express')
+const express = require('express');
 
-const app = express()
-app.use(express.json())
+const app = express();
+app.use(express.json());
 
 app.get('/products', (_req, res) => {
   res.json({
@@ -42,9 +42,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 12,
+              ui_suggested_sort_order: 12
             },
             {
               id: 6043853,
@@ -64,9 +64,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 11,
+              ui_suggested_sort_order: 11
             },
             {
               id: 6043851,
@@ -86,9 +86,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 10,
+              ui_suggested_sort_order: 10
             },
             {
               id: 6043856,
@@ -108,9 +108,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 9,
+              ui_suggested_sort_order: 9
             },
             {
               id: 6043852,
@@ -130,9 +130,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 8,
+              ui_suggested_sort_order: 8
             },
             {
               id: 6043850,
@@ -152,9 +152,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 7,
+              ui_suggested_sort_order: 7
             },
             {
               id: 6043848,
@@ -174,9 +174,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 6,
+              ui_suggested_sort_order: 6
             },
             {
               id: 6043847,
@@ -196,9 +196,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 5,
+              ui_suggested_sort_order: 5
             },
             {
               id: 6043740,
@@ -218,9 +218,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 6043738,
@@ -240,9 +240,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 3,
+              ui_suggested_sort_order: 3
             },
             {
               id: 6043737,
@@ -262,9 +262,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 6043846,
@@ -284,10 +284,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -297,9 +297,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 6041377,
@@ -336,9 +336,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 16,
+              ui_suggested_sort_order: 16
             },
             {
               id: 6043754,
@@ -358,9 +358,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 15,
+              ui_suggested_sort_order: 15
             },
             {
               id: 6043755,
@@ -380,9 +380,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 14,
+              ui_suggested_sort_order: 14
             },
             {
               id: 6043753,
@@ -402,9 +402,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 13,
+              ui_suggested_sort_order: 13
             },
             {
               id: 6043752,
@@ -424,9 +424,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 12,
+              ui_suggested_sort_order: 12
             },
             {
               id: 6043747,
@@ -446,9 +446,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 11,
+              ui_suggested_sort_order: 11
             },
             {
               id: 6043748,
@@ -468,9 +468,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 10,
+              ui_suggested_sort_order: 10
             },
             {
               id: 6043749,
@@ -490,9 +490,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 9,
+              ui_suggested_sort_order: 9
             },
             {
               id: 6043750,
@@ -512,9 +512,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 8,
+              ui_suggested_sort_order: 8
             },
             {
               id: 6043751,
@@ -534,9 +534,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 7,
+              ui_suggested_sort_order: 7
             },
             {
               id: 6043742,
@@ -556,9 +556,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 6,
+              ui_suggested_sort_order: 6
             },
             {
               id: 6043743,
@@ -578,9 +578,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 5,
+              ui_suggested_sort_order: 5
             },
             {
               id: 6043744,
@@ -600,9 +600,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 6043746,
@@ -622,9 +622,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 3,
+              ui_suggested_sort_order: 3
             },
             {
               id: 6043745,
@@ -644,9 +644,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 6043741,
@@ -666,10 +666,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -679,9 +679,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 6041376,
@@ -718,9 +718,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 6043849,
@@ -740,9 +740,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 6043854,
@@ -762,10 +762,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -775,9 +775,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 6041379,
@@ -814,9 +814,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 16,
+              ui_suggested_sort_order: 16
             },
             {
               id: 6043778,
@@ -836,9 +836,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 15,
+              ui_suggested_sort_order: 15
             },
             {
               id: 6043777,
@@ -858,9 +858,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 14,
+              ui_suggested_sort_order: 14
             },
             {
               id: 6043776,
@@ -880,9 +880,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 13,
+              ui_suggested_sort_order: 13
             },
             {
               id: 6043775,
@@ -902,9 +902,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 12,
+              ui_suggested_sort_order: 12
             },
             {
               id: 6043774,
@@ -924,9 +924,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 11,
+              ui_suggested_sort_order: 11
             },
             {
               id: 6043773,
@@ -946,9 +946,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 10,
+              ui_suggested_sort_order: 10
             },
             {
               id: 6043772,
@@ -968,9 +968,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 9,
+              ui_suggested_sort_order: 9
             },
             {
               id: 6043771,
@@ -990,9 +990,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 8,
+              ui_suggested_sort_order: 8
             },
             {
               id: 6043770,
@@ -1012,9 +1012,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 7,
+              ui_suggested_sort_order: 7
             },
             {
               id: 6043769,
@@ -1034,9 +1034,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 6,
+              ui_suggested_sort_order: 6
             },
             {
               id: 6043768,
@@ -1056,9 +1056,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 5,
+              ui_suggested_sort_order: 5
             },
             {
               id: 6043767,
@@ -1078,9 +1078,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 6043766,
@@ -1100,9 +1100,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 3,
+              ui_suggested_sort_order: 3
             },
             {
               id: 6043765,
@@ -1122,9 +1122,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 6043757,
@@ -1144,10 +1144,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -1157,9 +1157,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 651428,
@@ -1196,10 +1196,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -1209,9 +1209,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 6081404,
@@ -1248,10 +1248,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -1261,9 +1261,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 6178983,
@@ -1300,10 +1300,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -1313,9 +1313,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 6241212,
@@ -1352,9 +1352,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 6243628,
@@ -1374,10 +1374,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -1387,9 +1387,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 6041400,
@@ -1426,9 +1426,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 12,
+              ui_suggested_sort_order: 12
             },
             {
               id: 6043843,
@@ -1448,9 +1448,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 11,
+              ui_suggested_sort_order: 11
             },
             {
               id: 6043831,
@@ -1470,9 +1470,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 10,
+              ui_suggested_sort_order: 10
             },
             {
               id: 6043830,
@@ -1492,9 +1492,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 9,
+              ui_suggested_sort_order: 9
             },
             {
               id: 6043829,
@@ -1514,9 +1514,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 8,
+              ui_suggested_sort_order: 8
             },
             {
               id: 6043827,
@@ -1536,9 +1536,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 7,
+              ui_suggested_sort_order: 7
             },
             {
               id: 6043826,
@@ -1558,9 +1558,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 6,
+              ui_suggested_sort_order: 6
             },
             {
               id: 6043825,
@@ -1580,9 +1580,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 5,
+              ui_suggested_sort_order: 5
             },
             {
               id: 6043824,
@@ -1602,9 +1602,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 6043822,
@@ -1624,9 +1624,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 3,
+              ui_suggested_sort_order: 3
             },
             {
               id: 6043821,
@@ -1646,9 +1646,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 6043820,
@@ -1668,10 +1668,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -1681,9 +1681,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 6041401,
@@ -1720,9 +1720,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 6043828,
@@ -1742,9 +1742,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 6043844,
@@ -1764,10 +1764,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -1777,9 +1777,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 1496016,
@@ -1816,9 +1816,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 1498152,
@@ -1838,10 +1838,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -1851,9 +1851,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: '',
             promotion_slider_source_kz: '',
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 5695464,
@@ -1890,9 +1890,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 5697820,
@@ -1912,10 +1912,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -1925,9 +1925,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 841,
@@ -1964,9 +1964,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 99999,
+              ui_suggested_sort_order: 99999
             },
             {
               id: 2362,
@@ -1986,10 +1986,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 24,
-            },
+              ui_suggested_sort_order: 24
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -1999,9 +1999,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 861,
@@ -2038,9 +2038,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 99999,
+              ui_suggested_sort_order: 99999
             },
             {
               id: 2409,
@@ -2060,10 +2060,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 24,
-            },
+              ui_suggested_sort_order: 24
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -2073,9 +2073,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 80492,
@@ -2112,9 +2112,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 10,
+              ui_suggested_sort_order: 10
             },
             {
               id: 82356,
@@ -2134,9 +2134,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 9,
+              ui_suggested_sort_order: 9
             },
             {
               id: 432116,
@@ -2156,9 +2156,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 7,
+              ui_suggested_sort_order: 7
             },
             {
               id: 432115,
@@ -2178,9 +2178,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 5,
+              ui_suggested_sort_order: 5
             },
             {
               id: 432117,
@@ -2200,9 +2200,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 432111,
@@ -2222,10 +2222,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -2235,9 +2235,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 635876,
@@ -2274,10 +2274,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -2287,9 +2287,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 430149,
@@ -2326,10 +2326,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -2339,9 +2339,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 1346665,
@@ -2373,15 +2373,14 @@ app.get('/products', (_req, res) => {
                 memory: '128 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu in prijs verlaagd',
-                promotion_slider_source:
-                  'usp_offer_samsung-galaxy-s20-fe-5g-dual-sim',
+                promotion_slider_source: 'usp_offer_samsung-galaxy-s20-fe-5g-dual-sim',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 1348774,
@@ -2396,29 +2395,27 @@ app.get('/products', (_req, res) => {
                 memory: '128 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu in prijs verlaagd',
-                promotion_slider_source:
-                  'usp_offer_samsung-galaxy-s20-fe-5g-dual-sim',
+                promotion_slider_source: 'usp_offer_samsung-galaxy-s20-fe-5g-dual-sim',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
             promotion_label: 'Nu in prijs verlaagd',
-            promotion_slider_source:
-              'usp_offer_samsung-galaxy-s20-fe-5g-dual-sim',
+            promotion_slider_source: 'usp_offer_samsung-galaxy-s20-fe-5g-dual-sim',
             promotion_bg_color: 'green',
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 1941172,
@@ -2455,9 +2452,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 2152652,
@@ -2477,10 +2474,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -2490,9 +2487,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 654544,
@@ -2523,16 +2520,15 @@ app.get('/products', (_req, res) => {
                 color_name: 'Red',
                 memory: '64 GB',
                 handset_cat_promotion_sticker: 'snelpakker',
-                promotion_label:
-                  'Nu met € 48,- korting en 3 mnd Apple TV+ gratis',
+                promotion_label: 'Nu met € 48,- korting en 3 mnd Apple TV+ gratis',
                 promotion_slider_source: 'usp_offer_smartphone_deal_iphone_se',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 656546,
@@ -2546,17 +2542,16 @@ app.get('/products', (_req, res) => {
                 color_name: 'Red',
                 memory: '128 GB',
                 handset_cat_promotion_sticker: 'snelpakker',
-                promotion_label:
-                  'Nu met € 48,- korting en 3 mnd Apple TV+ gratis',
+                promotion_label: 'Nu met € 48,- korting en 3 mnd Apple TV+ gratis',
                 promotion_slider_source: 'usp_offer_smartphone_deal_iphone_se',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: 'snelpakker',
@@ -2566,9 +2561,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 1295048,
@@ -2605,10 +2600,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -2618,9 +2613,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 635889,
@@ -2657,10 +2652,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -2670,9 +2665,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 1495996,
@@ -2709,9 +2704,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 12,
+              ui_suggested_sort_order: 12
             },
             {
               id: 1498113,
@@ -2731,9 +2726,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 11,
+              ui_suggested_sort_order: 11
             },
             {
               id: 1498115,
@@ -2753,9 +2748,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 9,
+              ui_suggested_sort_order: 9
             },
             {
               id: 1498111,
@@ -2775,9 +2770,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 8,
+              ui_suggested_sort_order: 8
             },
             {
               id: 1498096,
@@ -2797,9 +2792,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 5,
+              ui_suggested_sort_order: 5
             },
             {
               id: 1498095,
@@ -2819,9 +2814,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 1498094,
@@ -2841,9 +2836,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 3,
+              ui_suggested_sort_order: 3
             },
             {
               id: 1498093,
@@ -2863,9 +2858,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 1498092,
@@ -2885,10 +2880,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -2898,9 +2893,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: '',
             promotion_slider_source_kz: '',
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 1554962,
@@ -2937,9 +2932,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 11,
+              ui_suggested_sort_order: 11
             },
             {
               id: 3360399,
@@ -2959,9 +2954,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 10,
+              ui_suggested_sort_order: 10
             },
             {
               id: 1557086,
@@ -2981,9 +2976,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 8,
+              ui_suggested_sort_order: 8
             },
             {
               id: 1557084,
@@ -3003,9 +2998,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 7,
+              ui_suggested_sort_order: 7
             },
             {
               id: 1557083,
@@ -3025,9 +3020,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 6,
+              ui_suggested_sort_order: 6
             },
             {
               id: 1557081,
@@ -3047,9 +3042,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 5,
+              ui_suggested_sort_order: 5
             },
             {
               id: 1557082,
@@ -3069,9 +3064,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 1557079,
@@ -3091,9 +3086,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 3,
+              ui_suggested_sort_order: 3
             },
             {
               id: 1557078,
@@ -3113,10 +3108,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -3126,9 +3121,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: '',
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 1554963,
@@ -3165,10 +3160,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -3178,9 +3173,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: '',
             promotion_slider_source_kz: '',
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 1564585,
@@ -3217,9 +3212,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 11,
+              ui_suggested_sort_order: 11
             },
             {
               id: 1566722,
@@ -3239,10 +3234,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 8,
-            },
+              ui_suggested_sort_order: 8
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -3252,9 +3247,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 635899,
@@ -3291,10 +3286,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -3304,9 +3299,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 1571239,
@@ -3343,10 +3338,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -3356,9 +3351,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 1496015,
@@ -3395,9 +3390,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 15,
+              ui_suggested_sort_order: 15
             },
             {
               id: 1498156,
@@ -3417,9 +3412,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 14,
+              ui_suggested_sort_order: 14
             },
             {
               id: 1498158,
@@ -3439,9 +3434,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 13,
+              ui_suggested_sort_order: 13
             },
             {
               id: 3360420,
@@ -3461,9 +3456,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 12,
+              ui_suggested_sort_order: 12
             },
             {
               id: 3360421,
@@ -3483,9 +3478,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 11,
+              ui_suggested_sort_order: 11
             },
             {
               id: 3360422,
@@ -3505,9 +3500,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 10,
+              ui_suggested_sort_order: 10
             },
             {
               id: 1498159,
@@ -3527,9 +3522,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 9,
+              ui_suggested_sort_order: 9
             },
             {
               id: 1498153,
@@ -3549,9 +3544,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 8,
+              ui_suggested_sort_order: 8
             },
             {
               id: 1498154,
@@ -3571,9 +3566,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 7,
+              ui_suggested_sort_order: 7
             },
             {
               id: 1498151,
@@ -3593,9 +3588,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 6,
+              ui_suggested_sort_order: 6
             },
             {
               id: 1498150,
@@ -3615,9 +3610,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 5,
+              ui_suggested_sort_order: 5
             },
             {
               id: 1498149,
@@ -3637,9 +3632,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 1498148,
@@ -3659,9 +3654,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 3,
+              ui_suggested_sort_order: 3
             },
             {
               id: 1498146,
@@ -3681,9 +3676,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 1498145,
@@ -3703,10 +3698,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: '',
                 promotion_slider_source_kz: '',
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -3716,9 +3711,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: '',
             promotion_slider_source_kz: '',
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 2389431,
@@ -3755,10 +3750,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -3768,9 +3763,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 5184950,
@@ -3802,15 +3797,14 @@ app.get('/products', (_req, res) => {
                 memory: '128 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu met € 72 korting en Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21-ultra',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 6290859,
@@ -3825,15 +3819,14 @@ app.get('/products', (_req, res) => {
                 memory: '128 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu met € 72 korting en Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21-ultra',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 6290861,
@@ -3848,15 +3841,14 @@ app.get('/products', (_req, res) => {
                 memory: '128 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu met € 72 korting en Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21-ultra',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 6290860,
@@ -3871,15 +3863,14 @@ app.get('/products', (_req, res) => {
                 memory: '128 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu met € 72 korting en Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21-ultra',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 6290862,
@@ -3894,15 +3885,14 @@ app.get('/products', (_req, res) => {
                 memory: '256 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu met € 72 korting en Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21-ultra',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 6356569,
@@ -3917,29 +3907,27 @@ app.get('/products', (_req, res) => {
                 memory: '256 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu met € 72 korting en Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21-ultra',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
             promotion_label: 'Nu met € 72 korting en Buds2 t.w.v. € 149,-',
-            promotion_slider_source:
-              'usp_offer_smartphone_deal_samsung_s21-ultra',
+            promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
             promotion_bg_color: 'green',
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 3316740,
@@ -3976,9 +3964,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 3319032,
@@ -3998,10 +3986,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4011,9 +3999,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 4344078,
@@ -4050,9 +4038,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 4346421,
@@ -4072,10 +4060,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4085,9 +4073,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 2599174,
@@ -4124,9 +4112,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 2601454,
@@ -4146,10 +4134,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4159,9 +4147,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 2599175,
@@ -4198,9 +4186,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 2601456,
@@ -4220,10 +4208,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4233,9 +4221,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 3585223,
@@ -4272,9 +4260,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 3587526,
@@ -4294,10 +4282,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4307,9 +4295,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 3797031,
@@ -4346,9 +4334,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 3799338,
@@ -4368,10 +4356,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4381,9 +4369,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 3592411,
@@ -4420,10 +4408,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4433,9 +4421,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 4248847,
@@ -4472,10 +4460,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4485,9 +4473,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 2385898,
@@ -4524,10 +4512,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4537,9 +4525,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 2599177,
@@ -4576,9 +4564,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 2601464,
@@ -4598,10 +4586,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4611,9 +4599,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 3292889,
@@ -4650,10 +4638,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4663,9 +4651,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 5206184,
@@ -4697,15 +4685,14 @@ app.get('/products', (_req, res) => {
                 memory: '256 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Met Buds2 en Note Package t.w.v. € 238,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_galaxy_fold',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_galaxy_fold',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 5208552,
@@ -4720,15 +4707,14 @@ app.get('/products', (_req, res) => {
                 memory: '256 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Met Buds2 en Note Package t.w.v. € 238,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_galaxy_fold',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_galaxy_fold',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 5208553,
@@ -4743,15 +4729,14 @@ app.get('/products', (_req, res) => {
                 memory: '256 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Met Buds2 en Note Package t.w.v. € 238,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_galaxy_fold',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_galaxy_fold',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 5208554,
@@ -4766,15 +4751,14 @@ app.get('/products', (_req, res) => {
                 memory: '512 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Met Buds2 en Note Package t.w.v. € 238,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_galaxy_fold',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_galaxy_fold',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 5208555,
@@ -4789,29 +4773,27 @@ app.get('/products', (_req, res) => {
                 memory: '512 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Met Buds2 en Note Package t.w.v. € 238,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_galaxy_fold',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_galaxy_fold',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
             promotion_label: 'Met Buds2 en Note Package t.w.v. € 238,-',
-            promotion_slider_source:
-              'usp_offer_smartphone_deal_samsung_galaxy_fold',
+            promotion_slider_source: 'usp_offer_smartphone_deal_samsung_galaxy_fold',
             promotion_bg_color: 'green',
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 2490563,
@@ -4848,10 +4830,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4861,9 +4843,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 3292893,
@@ -4900,9 +4882,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 3295194,
@@ -4922,10 +4904,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4935,9 +4917,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 4649576,
@@ -4974,10 +4956,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -4987,9 +4969,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 4649577,
@@ -5026,10 +5008,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -5039,9 +5021,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 2123546,
@@ -5073,15 +5055,14 @@ app.get('/products', (_req, res) => {
                 memory: '128 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu met Galaxy Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21-ultra',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 2125765,
@@ -5096,15 +5077,14 @@ app.get('/products', (_req, res) => {
                 memory: '256 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu met Galaxy Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21-ultra',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 3,
+              ui_suggested_sort_order: 3
             },
             {
               id: 2125762,
@@ -5119,29 +5099,27 @@ app.get('/products', (_req, res) => {
                 memory: '128 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu met Galaxy Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21-ultra',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
             promotion_label: 'Nu met Galaxy Buds2 t.w.v. € 149,-',
-            promotion_slider_source:
-              'usp_offer_smartphone_deal_samsung_s21-ultra',
+            promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
             promotion_bg_color: 'green',
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 2123547,
@@ -5173,15 +5151,14 @@ app.get('/products', (_req, res) => {
                 memory: '256 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu met Galaxy Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21-ultra',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 2125769,
@@ -5196,15 +5173,14 @@ app.get('/products', (_req, res) => {
                 memory: '128 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu met Galaxy Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21-ultra',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 2125768,
@@ -5219,29 +5195,27 @@ app.get('/products', (_req, res) => {
                 memory: '128 GB',
                 handset_cat_promotion_sticker: null,
                 promotion_label: 'Nu met Galaxy Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21-ultra',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
             promotion_label: 'Nu met Galaxy Buds2 t.w.v. € 149,-',
-            promotion_slider_source:
-              'usp_offer_smartphone_deal_samsung_s21-ultra',
+            promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21-ultra',
             promotion_bg_color: 'green',
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 2358297,
@@ -5278,10 +5252,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -5291,9 +5265,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 736187,
@@ -5330,10 +5304,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -5343,9 +5317,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 3179067,
@@ -5382,9 +5356,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 3181358,
@@ -5404,10 +5378,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -5417,9 +5391,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 3179072,
@@ -5456,9 +5430,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 3181368,
@@ -5478,10 +5452,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -5491,9 +5465,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 5695470,
@@ -5530,9 +5504,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
+              ui_suggested_sort_order: 0
             },
             {
               id: 5697835,
@@ -5552,10 +5526,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -5565,9 +5539,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: false,
+          has_promotion: false
         },
         {
           id: 5920212,
@@ -5604,10 +5578,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 0,
-            },
+              ui_suggested_sort_order: 0
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: null,
@@ -5617,9 +5591,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 2123499,
@@ -5650,17 +5624,15 @@ app.get('/products', (_req, res) => {
                 color_name: 'Phantom Gray',
                 memory: '256 GB',
                 handset_cat_promotion_sticker: 'snelpakker',
-                promotion_label:
-                  'Nu met € 72,- korting en Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21',
+                promotion_label: 'Nu met € 72,- korting en Buds2 t.w.v. € 149,-',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 8,
+              ui_suggested_sort_order: 8
             },
             {
               id: 2125602,
@@ -5674,17 +5646,15 @@ app.get('/products', (_req, res) => {
                 color_name: 'Phantom Violet',
                 memory: '128 GB',
                 handset_cat_promotion_sticker: 'snelpakker',
-                promotion_label:
-                  'Nu met € 72,- korting en Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21',
+                promotion_label: 'Nu met € 72,- korting en Buds2 t.w.v. € 149,-',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 2125603,
@@ -5698,17 +5668,15 @@ app.get('/products', (_req, res) => {
                 color_name: 'Phantom Pink',
                 memory: '128 GB',
                 handset_cat_promotion_sticker: 'snelpakker',
-                promotion_label:
-                  'Nu met € 72,- korting en Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21',
+                promotion_label: 'Nu met € 72,- korting en Buds2 t.w.v. € 149,-',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 3,
+              ui_suggested_sort_order: 3
             },
             {
               id: 2125601,
@@ -5722,18 +5690,16 @@ app.get('/products', (_req, res) => {
                 color_name: 'Phantom Gray',
                 memory: '128 GB',
                 handset_cat_promotion_sticker: 'snelpakker',
-                promotion_label:
-                  'Nu met € 72,- korting en Buds2 t.w.v. € 149,-',
-                promotion_slider_source:
-                  'usp_offer_smartphone_deal_samsung_s21',
+                promotion_label: 'Nu met € 72,- korting en Buds2 t.w.v. € 149,-',
+                promotion_slider_source: 'usp_offer_smartphone_deal_samsung_s21',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: 'snelpakker',
@@ -5743,9 +5709,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 654543,
@@ -5776,16 +5742,15 @@ app.get('/products', (_req, res) => {
                 color_name: 'Black',
                 memory: '128 GB',
                 handset_cat_promotion_sticker: 'snelpakker',
-                promotion_label:
-                  'Nu met € 48,- korting en 3 mnd Apple TV+ gratis',
+                promotion_label: 'Nu met € 48,- korting en 3 mnd Apple TV+ gratis',
                 promotion_slider_source: 'usp_offer_smartphone_deal_iphone_se',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 656547,
@@ -5799,16 +5764,15 @@ app.get('/products', (_req, res) => {
                 color_name: 'White',
                 memory: '128 GB',
                 handset_cat_promotion_sticker: 'snelpakker',
-                promotion_label:
-                  'Nu met € 48,- korting en 3 mnd Apple TV+ gratis',
+                promotion_label: 'Nu met € 48,- korting en 3 mnd Apple TV+ gratis',
                 promotion_slider_source: 'usp_offer_smartphone_deal_iphone_se',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 3,
+              ui_suggested_sort_order: 3
             },
             {
               id: 656531,
@@ -5822,16 +5786,15 @@ app.get('/products', (_req, res) => {
                 color_name: 'White',
                 memory: '64 GB',
                 handset_cat_promotion_sticker: 'snelpakker',
-                promotion_label:
-                  'Nu met € 48,- korting en 3 mnd Apple TV+ gratis',
+                promotion_label: 'Nu met € 48,- korting en 3 mnd Apple TV+ gratis',
                 promotion_slider_source: 'usp_offer_smartphone_deal_iphone_se',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 656530,
@@ -5845,17 +5808,16 @@ app.get('/products', (_req, res) => {
                 color_name: 'Black',
                 memory: '64 GB',
                 handset_cat_promotion_sticker: 'snelpakker',
-                promotion_label:
-                  'Nu met € 48,- korting en 3 mnd Apple TV+ gratis',
+                promotion_label: 'Nu met € 48,- korting en 3 mnd Apple TV+ gratis',
                 promotion_slider_source: 'usp_offer_smartphone_deal_iphone_se',
                 promotion_bg_color: 'green',
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: 'snelpakker',
@@ -5865,9 +5827,9 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
+          has_promotion: true
         },
         {
           id: 5375999,
@@ -5904,9 +5866,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 4,
+              ui_suggested_sort_order: 4
             },
             {
               id: 5378363,
@@ -5926,9 +5888,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 3,
+              ui_suggested_sort_order: 3
             },
             {
               id: 5378364,
@@ -5948,9 +5910,9 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 2,
+              ui_suggested_sort_order: 2
             },
             {
               id: 5378361,
@@ -5970,10 +5932,10 @@ app.get('/products', (_req, res) => {
                 handset_cat_promotion_sticker_kz: null,
                 promotion_label_kz: null,
                 promotion_slider_source_kz: null,
-                promotion_bg_color_kz: null,
+                promotion_bg_color_kz: null
               },
-              ui_suggested_sort_order: 1,
-            },
+              ui_suggested_sort_order: 1
+            }
           ],
           attributes: {
             handset_cat_promotion_sticker: 'snelpakker',
@@ -5983,13 +5945,13 @@ app.get('/products', (_req, res) => {
             handset_cat_promotion_sticker_kz: null,
             promotion_label_kz: null,
             promotion_slider_source_kz: null,
-            promotion_bg_color_kz: null,
+            promotion_bg_color_kz: null
           },
-          has_promotion: true,
-        },
-      ],
-    },
-  })
-})
+          has_promotion: true
+        }
+      ]
+    }
+  });
+});
 
-module.exports = app
+module.exports = app;

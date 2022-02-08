@@ -1,4 +1,4 @@
-import { defineConfig } from '@windicss/plugin-utils'
+import { defineConfig } from '@windicss/plugin-utils';
 
 export default defineConfig({
   /**
@@ -14,43 +14,43 @@ export default defineConfig({
         sm: '100%',
         md: '100%',
         lg: '100%',
-        xl: '1280px',
-      },
+        xl: '1280px'
+      }
     },
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#07c',
-          10: 'var(--color-primary-10)',
-          50: 'var(--color-primary-50)',
-          100: 'var(--color-primary-100)',
-          200: 'var(--color-primary-200)',
-          300: 'var(--color-primary-300)',
-          400: 'var(--color-primary-400)',
-          500: 'var(--color-primary-500)',
-          600: 'var(--color-primary-600)',
-          700: 'var(--color-primary-700)',
-          800: 'var(--color-primary-800)',
-          900: 'var(--color-primary-900)',
+          DEFAULT: '#0077CC',
+          '50': '#85CCFF',
+          '100': '#70C3FF',
+          '200': '#47B2FF',
+          '300': '#1FA1FF',
+          '400': '#008FF5',
+          '500': '#0077CC',
+          '600': '#005694',
+          '700': '#00365C',
+          '800': '#001524',
+          '900': '#000000'
         },
         secondary: {
           DEFAULT: '#00c300',
-          100: 'var(--color-secondary-100)',
-          200: 'var(--color-secondary-200)',
-          300: 'var(--color-secondary-300)',
-          400: 'var(--color-secondary-400)',
-          500: 'var(--color-secondary-500)',
-          600: 'var(--color-secondary-600)',
-          700: 'var(--color-secondary-700)',
-          800: 'var(--color-secondary-800)',
-          900: 'var(--color-secondary-900)',
-        },
-      },
-    },
+          '50': '#7CFF7C',
+          '100': '#67FF67',
+          '200': '#3EFF3E',
+          '300': '#16FF16',
+          '400': '#00EC00',
+          '500': '#009900',
+          '600': '#008B00',
+          '700': '#005300',
+          '800': '#001B00',
+          '900': '#000000'
+        }
+      }
+    }
   },
   extract: {
     include: ['**/*.{vue,html,jsx,tsx}'],
-    exclude: ['node_modules', '.git'],
+    exclude: ['node_modules', '.git']
   },
-  plugins: [require('windicss/plugin/forms')],
-})
+  plugins: [require('windicss/plugin/forms')]
+});

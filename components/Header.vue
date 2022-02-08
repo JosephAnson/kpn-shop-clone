@@ -1,13 +1,11 @@
 <template>
-  <div class="bg-white py-2 mb-2">
-    <div class="container">
-      This is header
-    </div>
-  </div>
+  <header class="mb-2 border-b-2 bg-white py-6">
+    <div class="container">This is header</div>
+  </header>
 </template>
 
 <script>
 export default {
-  name: "VHeader"
+  name: 'VHeader'
 };
 </script>

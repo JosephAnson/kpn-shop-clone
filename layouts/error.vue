@@ -7,9 +7,18 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { NuxtError } from '@nuxt/types/app';
+import { PropType } from 'vue';
+
 export default {
-  props: ["error"],
-  layout: "shop" // you can set a custom layout for the error page
+  name: 'ErrorLayout',
+  layout: 'shop',
+  props: {
+    error: {
+      type: Object as PropType<NuxtError>,
+      required: true
+    }
+  }
 };
 </script>
