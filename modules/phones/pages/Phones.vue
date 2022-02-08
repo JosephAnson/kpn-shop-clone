@@ -45,28 +45,28 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import { Context } from '@nuxt/types';
-import { NuxtError } from '@nuxt/types/app';
-import orderBy from 'lodash/orderBy';
-import Handset from '../components/Handset.vue';
-import { Phone } from '~/modules/phones/types';
-import PhoneFilter from '~/modules/phones/components/PhoneFilter.vue';
-import MobilePhoneFilter from '~/modules/phones/components/MobilePhoneFilter.vue';
-import { sortOptions } from '~/modules/phones/constants';
+import Vue from "vue";
+import { Context } from "@nuxt/types";
+import { NuxtError } from "@nuxt/types/app";
+import orderBy from "lodash/orderBy";
+import Handset from "../components/Handset.vue";
+import { Phone } from "~/modules/phones/types";
+import PhoneFilter from "~/modules/phones/components/PhoneFilter.vue";
+import MobilePhoneFilter from "~/modules/phones/components/MobilePhoneFilter.vue";
+import { sortOptions } from "~/modules/phones/constants";
 
 export default Vue.extend({
-  name: 'PhonesPage',
+  name: "PhonesPage",
   components: {
     PhoneFilter,
     MobilePhoneFilter,
     Handset
   },
-  layout: 'shop',
-  async asyncData({ $axios, error }: Context) {
+  layout: "shop",
+  async asyncData({ $axios, error, $config: { baseURL } }: Context) {
     try {
       // Using the nuxtjs/http module here exposed via context.app
-      const response = await $axios.$get('http://localhost:3000/api/products');
+      const response = await $axios.$get(`${baseURL}/api/products`);
       const products: Phone[] = response.results.products;
 
       return { products };
@@ -81,7 +81,7 @@ export default Vue.extend({
       sort: sortOptions[0].value,
       sortOptions,
       filters: {
-        manufacturer: ['Fairphone']
+        manufacturer: ["Fairphone"]
       }
     };
   },
@@ -91,8 +91,8 @@ export default Vue.extend({
     },
     filteredProducts(): Phone[] {
       const query = this.buildFilter(this.filters);
-      const keysWithArrays = ['colors'];
-      const keysWithYesNo = ['has_5g', 'has_esim', 'refurbished'];
+      const keysWithArrays = ["colors"];
+      const keysWithYesNo = ["has_5g", "has_esim", "refurbished"];
 
       return this.products.filter((product: Record<string, any>) => {
         for (const key in query) {
@@ -109,8 +109,8 @@ export default Vue.extend({
           // If filter is yes or no we should check it matches the boolean equivalent
           if (keysWithYesNo.includes(key)) {
             return (
-              (product[key] === true && query[key].includes('yes')) ||
-              (product[key] === false && query[key].includes('no'))
+              (product[key] === true && query[key].includes("yes")) ||
+              (product[key] === false && query[key].includes("no"))
             );
           }
 
@@ -124,16 +124,16 @@ export default Vue.extend({
     },
     sortedAndFilteredProducts(): Phone[] {
       switch (this.sort) {
-        case 'release_date':
+        case "release_date":
           return [...this.filteredProducts].sort((first, second) => {
             return new Date(first.release_date).getTime() - new Date(second.sort_order).getTime();
           });
-        case 'has_promotion':
-          return orderBy(this.filteredProducts, [this.sort, 'sort_order'], ['desc', 'asc']);
-        case 'sort_order':
-          return orderBy(this.filteredProducts, ['sort_order'], ['asc']);
+        case "has_promotion":
+          return orderBy(this.filteredProducts, [this.sort, "sort_order"], ["desc", "asc"]);
+        case "sort_order":
+          return orderBy(this.filteredProducts, ["sort_order"], ["asc"]);
         default:
-          return orderBy(this.filteredProducts, ['sort_order'], ['asc']);
+          return orderBy(this.filteredProducts, ["sort_order"], ["asc"]);
       }
     }
   },
