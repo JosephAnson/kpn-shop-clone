@@ -40,6 +40,7 @@ export default {
     '@nuxtjs/axios',
     // https://github.com/anteriovieira/nuxt-material-design-icons
     'nuxt-material-design-icons',
+    // import modules https://vueschool.io/articles/vuejs-tutorials/domain-driven-design-in-nuxt-apps/
     '~/modules/phones/index.js'
   ],
 
