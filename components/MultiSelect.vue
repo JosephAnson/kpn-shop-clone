@@ -1,93 +1,72 @@
 <template>
-  <div class="relative group">
-    <select
-      class="w-full bg-white border border-gray-300 pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-      <option disabled selected>
-        <slot />
-      </option>
-    </select>
-
-    <div
-      class="absolute left-0 top-full z-10 bg-white shadow-lg shadow-gray-800 rounded-md py-2 px-4 text-base sm:text-sm hidden group-hover:inline-block transition ease-in-out">
-      <Checkbox
-        v-for="option in newOptions"
-        :id="option.value"
-        :key="option.value"
-        :value="option.checked"
-        @update:value="option.checked = $event"
-        class="whitespace-nowrap mb-2"
-      >
-        {{ option.label }}
-      </Checkbox>
-    </div>
+  <div>
+    <Checkbox
+      v-for="option in newOptions"
+      :key="option.value"
+      :value="checkedOptions[option.value]"
+      @update:value="setCheckedOption(option.value, $event)"
+    >
+      {{ option.label }}
+    </Checkbox>
   </div>
-
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue, { PropType } from 'vue';
 
 export type MultiSelectOption = {
-  label: string
-  value: string | number | boolean
-  checked: boolean
-}
+  label: string;
+  value: string | number | boolean;
+};
 
 export default Vue.extend({
-  name: "MultiSelect",
+  name: 'MultiSelect',
   props: {
-    value: { type: Array, default: () => [] },
+    id: { type: String, default: '' },
+    value: { type: Array, default: () => [] as PropType<string[]> },
     options: {
-      type: Array,
+      type: Array as PropType<MultiSelectOption[]>,
       default: () => []
     }
   },
   data() {
     return {
-      newValue: this.value,
+      checkedOptions: (this as any).createCheckedOptions(this.value) as Record<string, boolean>,
       newOptions: this.options
     };
   },
-  computed: {
-    computedValue: {
-      get() {
-        return this.newValue;
-      },
-      set(value) {
-        this.newValue = value;
-        this.$emit("update:value", value);
-      }
-    }
-  },
   watch: {
-    newOptions: {
-      handler(option) {
-        const selectedValues = option
-          .filter((item: MultiSelectOption) => item.checked)
-          .map((item: MultiSelectOption) => item.value);
-
-        Vue.set(this, "newValue", selectedValues);
-        this.$emit("update:value", selectedValues);
-      },
-      deep: true
-    },
     value: {
       handler(value) {
-        // Note: `newValue` will be equal to `oldValue` here
-        // on nested mutations as long as the object itself
-        // hasn't been replaced.
-        Vue.set(this, "newValue", value);
+        Vue.set(this, 'checkedOptions', this.createCheckedOptions(value));
       },
       deep: true
     },
     options: {
-      handler(option) {
-        // Note: `newValue` will be equal to `oldValue` here
-        // on nested mutations as long as the object itself
-        // hasn't been replaced.
-       // Vue.set(this, "newOptions", option);
+      handler(value) {
+        Vue.set(this, 'newOptions', value);
       },
       deep: true
+    }
+  },
+  methods: {
+    createCheckedOptions(value: string[]): Record<string, boolean> {
+      const newCheckedOptions: Record<string, boolean> = {};
+
+      for (const option of value) {
+        newCheckedOptions[option] = true;
+      }
+
+      return newCheckedOptions;
+    },
+    setCheckedOption(key: string, checked: boolean) {
+      this.checkedOptions[key] = checked;
+
+      const selectedValues = Object.keys(this.checkedOptions).filter(
+        (key: string) => this.checkedOptions[key]
+      );
+
+      this.$emit('update:value', selectedValues);
     }
   }
 });
