@@ -7,6 +7,7 @@
       :value="filters"
       :filtered-products="products"
       :total-phones="totalPhones"
+      :sort="sort"
       @update:value="filters = $event"
       @update:sort="sort = $event"
     />
@@ -87,7 +88,9 @@ export default Vue.extend({
       "has_esim" in route.query && (startingFilters.has_esim = (route.query.has_esim as string).split(","));
       "refurbished" in route.query && (startingFilters.refurbished = (route.query.refurbished as string).split(","));
 
-      return { products, route: route.query, filters: startingFilters };
+      const sort = "sort" in route.query ? (route.query.sort as string) : sortOptions[0].value;
+
+      return { products, route: route.query, filters: startingFilters, sort };
     } catch (e) {
       const err = e as NuxtError;
       error(err); // Show the nuxt error page with the thrown error

@@ -31,12 +31,12 @@
                 v-for="option in sortOptions"
                 :key="option.value"
                 class="mb-2 rounded border py-4 px-5"
-                :class="{ 'border-primary bg-primary/50': sort === option.value }"
-                @click="sort = option.value"
+                :class="{ 'border-primary bg-primary/50': newSort === option.value }"
+                @click="newSort = option.value"
               >
                 <input
                   id="sortRadio"
-                  v-model="sort"
+                  v-model="newSort"
                   class="form-check-input float-left mt-1 mr-3 h-4 w-4 cursor-pointer appearance-none rounded-full border border-gray-300 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 checked:border-blue-600 checked:bg-blue-600 focus:outline-none"
                   type="radio"
                   name="sortRadio"
@@ -96,13 +96,17 @@ export default Vue.extend({
     totalPhones: {
       type: Number,
       required: true
+    },
+    sort: {
+      type: String,
+      required: true
     }
   },
   data() {
     return {
       open: false,
       newValue: this.value,
-      sort: sortOptions[0].value,
+      newSort: this.sort,
       sortOptions
     };
   },
@@ -113,6 +117,9 @@ export default Vue.extend({
   },
   watch: {
     sort(sort) {
+      this.newSort = sort;
+    },
+    newSort(sort) {
       this.$emit('update:sort', sort);
     },
     newValue(value) {

@@ -10,7 +10,7 @@ export const sortOptions: { label: string; value: SortOptions }[] = [
     value: 'release_date'
   },
   {
-    label: 'Action',
+    label: 'Has Promotion',
     value: 'has_promotion'
   }
 ];
