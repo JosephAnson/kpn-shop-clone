@@ -50,10 +50,19 @@ import { Context } from "@nuxt/types";
 import { NuxtError } from "@nuxt/types/app";
 import orderBy from "lodash/orderBy";
 import Handset from "../components/Handset.vue";
-import { Phone } from "~/modules/phones/types";
+import { Filters, Phone, SortOptions } from "~/modules/phones/types";
 import PhoneFilter from "~/modules/phones/components/PhoneFilter.vue";
 import MobilePhoneFilter from "~/modules/phones/components/MobilePhoneFilter.vue";
 import { sortOptions } from "~/modules/phones/constants";
+
+const filters = {
+  manufacturer: [],
+  operating_system: [],
+  colors: [],
+  has_5g: [],
+  has_esim: [],
+  refurbished: []
+} as Filters;
 
 export default Vue.extend({
   name: "PhonesPage",
@@ -63,13 +72,22 @@ export default Vue.extend({
     Handset
   },
   layout: "shop",
-  async asyncData({ $axios, error, $config: { baseURL } }: Context) {
+  async asyncData({ $axios, error, $config: { baseURL }, route }: Context) {
     try {
       // Using the nuxtjs/http module here exposed via context.app
       const response = await $axios.$get(`${baseURL}/api/products`);
       const products: Phone[] = response.results.products;
 
-      return { products };
+      const startingFilters = filters;
+
+      "manufacturer" in route.query && (startingFilters.manufacturer = (route.query.manufacturer as string).split(","));
+      "operating_system" in route.query && (startingFilters.operating_system = (route.query.operating_system as string).split(","));
+      "colors" in route.query && (startingFilters.colors = (route.query.colors as string).split(","));
+      "has_5g" in route.query && (startingFilters.has_5g = (route.query.has_5g as string).split(","));
+      "has_esim" in route.query && (startingFilters.has_esim = (route.query.has_esim as string).split(","));
+      "refurbished" in route.query && (startingFilters.refurbished = (route.query.refurbished as string).split(","));
+
+      return { products, route: route.query, filters: startingFilters };
     } catch (e) {
       const err = e as NuxtError;
       error(err); // Show the nuxt error page with the thrown error
@@ -78,11 +96,9 @@ export default Vue.extend({
   data() {
     return {
       products: [] as Phone[],
-      sort: sortOptions[0].value,
+      sort: sortOptions[0].value as SortOptions,
       sortOptions,
-      filters: {
-        manufacturer: ["Fairphone"]
-      }
+      filters
     };
   },
   computed: {
@@ -137,7 +153,32 @@ export default Vue.extend({
       }
     }
   },
+  watch: {
+    filters: {
+      handler() {
+        this.setQuery();
+      },
+      deep: true
+    },
+    sort() {
+      this.setQuery();
+    }
+  },
   methods: {
+    setQuery() {
+      const filters = this.buildFilter(this.filters);
+      const query: Record<string, string> = {};
+
+      for (const keys in filters) {
+        query[keys] = filters[keys].join(",");
+      }
+
+      query.sort = this.sort;
+
+      this.$router.push({
+        path: this.$route.path, query
+      });
+    },
     buildFilter(filter: Record<string, string[]>) {
       const query: Record<string, string[]> = {};
       for (const keys in filter) {

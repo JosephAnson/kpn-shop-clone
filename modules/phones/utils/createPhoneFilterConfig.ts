@@ -1,21 +1,21 @@
 import { Phone } from '~/modules/phones/types';
 
-type YesNoFilterCount = {
+type YesNoFilter = {
   yes: number;
   no: number;
 };
 
-type FilterCount = {
+type CreatePhoneFilterConfig = {
   manufacturer: Record<string, number>;
   operating_system: Record<string, number>;
   colors: Record<string, number>;
-  has_5g: YesNoFilterCount;
-  has_esim: YesNoFilterCount;
-  refurbished: YesNoFilterCount;
+  has_5g: YesNoFilter;
+  has_esim: YesNoFilter;
+  refurbished: YesNoFilter;
 };
 
-export default function phoneFilterCount(phones: Phone[]): FilterCount {
-  const filterCount: FilterCount = {
+export default function createPhoneFilterConfig(phones: Phone[]): CreatePhoneFilterConfig {
+  const filterCount: CreatePhoneFilterConfig = {
     manufacturer: {},
     operating_system: {},
     colors: {},

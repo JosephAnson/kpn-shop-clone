@@ -39,3 +39,14 @@ export type Phone = {
   default: string;
   variants: PhoneVariant[];
 };
+
+export type SortOptions = 'sort_order' | 'release_date' | 'has_promotion';
+export type FilterOptions =
+  | 'manufacturer'
+  | 'operating_system'
+  | 'colors'
+  | 'has_5g'
+  | 'has_esim'
+  | 'refurbished';
+
+export type Filters = { [key in FilterOptions]: string[] };

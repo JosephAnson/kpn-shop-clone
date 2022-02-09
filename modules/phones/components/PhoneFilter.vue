@@ -26,7 +26,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import createPhoneFilterConfig from '~/modules/phones/utils/filterCount';
+import createPhoneFilterConfig from '~/modules/phones/utils/createPhoneFilterConfig';
 import { createFilterMultiSelectOptions } from '~/modules/phones/utils/createFilterMultiSelectOptions';
 
 export default Vue.extend({
