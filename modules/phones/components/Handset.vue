@@ -19,7 +19,7 @@
         <div class="product-image mb-4 flex h-[200px] w-full justify-center md:h-[240px]">
           <img
             class="object-contain"
-            :src="`https://www.kpnn.com/shop/cdn/products/_/product_${currentVariant.id}_main.png`"
+            :src="`https://www.kpn.com/shop/cdn/products/_/product_${currentVariant.id}_main.png`"
             :alt="currentVariant.name"
           />
         </div>
