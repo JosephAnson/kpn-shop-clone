@@ -85,7 +85,7 @@ import { sortOptions } from '~/modules/phones/constants';
 export default Vue.extend({
   name: 'PhoneFilter',
   props: {
-    filteredProducts: {
+    products: {
       type: Array,
       required: true
     },
@@ -112,7 +112,7 @@ export default Vue.extend({
   },
   computed: {
     filterConfig() {
-      return createPhoneFilterConfig((this as any).filteredProducts);
+      return createPhoneFilterConfig((this as any).products);
     }
   },
   watch: {
