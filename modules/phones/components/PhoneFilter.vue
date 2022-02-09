@@ -6,7 +6,7 @@
           class="w-full border border-gray-300 bg-white py-2 pl-3 pr-10 text-left focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
         >
           <option disabled selected>
-            {{ key }}
+            {{ $i18n.t(`phone.filter.${key}`) }}
           </option>
         </select>
 
@@ -25,12 +25,12 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import createPhoneFilterConfig from '~/modules/phones/utils/createPhoneFilterConfig';
-import { createFilterMultiSelectOptions } from '~/modules/phones/utils/createFilterMultiSelectOptions';
+import Vue from "vue";
+import createPhoneFilterConfig from "~/modules/phones/utils/createPhoneFilterConfig";
+import { createFilterMultiSelectOptions } from "~/modules/phones/utils/createFilterMultiSelectOptions";
 
 export default Vue.extend({
-  name: 'PhoneFilter',
+  name: "PhoneFilter",
   props: {
     filteredProducts: {
       type: Array,
@@ -56,7 +56,7 @@ export default Vue.extend({
     setFilters(key: string, values: string[]) {
       Vue.set(this.newValue, key, values);
 
-      this.$emit('update:value', this.newValue);
+      this.$emit("update:value", this.newValue);
     }
   }
 });

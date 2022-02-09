@@ -18,7 +18,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/i18n'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -40,6 +40,37 @@ export default {
     '@nuxtjs/axios',
     // https://github.com/anteriovieira/nuxt-material-design-icons
     'nuxt-material-design-icons',
+    // i18n
+    [
+      '@nuxtjs/i18n',
+      {
+        strategy: 'no_prefix',
+        vueI18nLoader: true,
+        fallbackLocale: 'nl',
+        locales: [
+          {
+            name: 'Nederlands',
+            code: 'nl',
+            file: 'nl-NL.js'
+          },
+          {
+            name: 'English',
+            code: 'en',
+            file: 'en-US.js',
+            icon: 'gb'
+          }
+        ],
+        silentFallbackWarn: true,
+        defaultLocale: 'en',
+        lazy: true,
+        langDir: 'lang/',
+        detectBrowserLanguage: {
+          useCookie: true,
+          cookieKey: 'i18n_lang',
+          alwaysRedirect: true
+        }
+      }
+    ],
     // import modules https://vueschool.io/articles/vuejs-tutorials/domain-driven-design-in-nuxt-apps/
     '~/modules/phones/index.js'
   ],
