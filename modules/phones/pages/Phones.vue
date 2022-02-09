@@ -46,15 +46,15 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import { Context } from "@nuxt/types";
-import { NuxtError } from "@nuxt/types/app";
-import orderBy from "lodash/orderBy";
-import Handset from "../components/Handset.vue";
-import { Filters, Phone, SortOptions } from "~/modules/phones/types";
-import PhoneFilter from "~/modules/phones/components/PhoneFilter.vue";
-import MobilePhoneFilter from "~/modules/phones/components/MobilePhoneFilter.vue";
-import { sortOptions } from "~/modules/phones/constants";
+import Vue from 'vue';
+import { Context } from '@nuxt/types';
+import { NuxtError } from '@nuxt/types/app';
+import orderBy from 'lodash/orderBy';
+import Handset from '../components/Handset.vue';
+import { Filters, Phone, SortOptions } from '~/modules/phones/types';
+import PhoneFilter from '~/modules/phones/components/PhoneFilter.vue';
+import MobilePhoneFilter from '~/modules/phones/components/MobilePhoneFilter.vue';
+import { sortOptions } from '~/modules/phones/constants';
 
 const filters = {
   manufacturer: [],
@@ -66,13 +66,13 @@ const filters = {
 } as Filters;
 
 export default Vue.extend({
-  name: "PhonesPage",
+  name: 'PhonesPage',
   components: {
     PhoneFilter,
     MobilePhoneFilter,
     Handset
   },
-  layout: "shop",
+  layout: 'shop',
   async asyncData({ $axios, error, $config: { baseURL }, route }: Context) {
     try {
       // Using the nuxtjs/http module here exposed via context.app
@@ -81,14 +81,20 @@ export default Vue.extend({
 
       const startingFilters = filters;
 
-      "manufacturer" in route.query && (startingFilters.manufacturer = (route.query.manufacturer as string).split(","));
-      "operating_system" in route.query && (startingFilters.operating_system = (route.query.operating_system as string).split(","));
-      "colors" in route.query && (startingFilters.colors = (route.query.colors as string).split(","));
-      "has_5g" in route.query && (startingFilters.has_5g = (route.query.has_5g as string).split(","));
-      "has_esim" in route.query && (startingFilters.has_esim = (route.query.has_esim as string).split(","));
-      "refurbished" in route.query && (startingFilters.refurbished = (route.query.refurbished as string).split(","));
+      'manufacturer' in route.query &&
+        (startingFilters.manufacturer = (route.query.manufacturer as string).split(','));
+      'operating_system' in route.query &&
+        (startingFilters.operating_system = (route.query.operating_system as string).split(','));
+      'colors' in route.query &&
+        (startingFilters.colors = (route.query.colors as string).split(','));
+      'has_5g' in route.query &&
+        (startingFilters.has_5g = (route.query.has_5g as string).split(','));
+      'has_esim' in route.query &&
+        (startingFilters.has_esim = (route.query.has_esim as string).split(','));
+      'refurbished' in route.query &&
+        (startingFilters.refurbished = (route.query.refurbished as string).split(','));
 
-      const sort = "sort" in route.query ? (route.query.sort as string) : sortOptions[0].value;
+      const sort = 'sort' in route.query ? (route.query.sort as string) : sortOptions[0].value;
 
       return { products, route: route.query, filters: startingFilters, sort };
     } catch (e) {
@@ -110,8 +116,8 @@ export default Vue.extend({
     },
     filteredProducts(): Phone[] {
       const query = this.buildFilter(this.filters);
-      const keysWithArrays = ["colors"];
-      const keysWithYesNo = ["has_5g", "has_esim", "refurbished"];
+      const keysWithArrays = ['colors'];
+      const keysWithYesNo = ['has_5g', 'has_esim', 'refurbished'];
 
       return this.products.filter((product: Record<string, any>) => {
         for (const key in query) {
@@ -128,8 +134,8 @@ export default Vue.extend({
           // If filter is yes or no we should check it matches the boolean equivalent
           if (keysWithYesNo.includes(key)) {
             return (
-              (product[key] === true && query[key].includes("yes")) ||
-              (product[key] === false && query[key].includes("no"))
+              (product[key] === true && query[key].includes('yes')) ||
+              (product[key] === false && query[key].includes('no'))
             );
           }
 
@@ -143,16 +149,16 @@ export default Vue.extend({
     },
     sortedAndFilteredProducts(): Phone[] {
       switch (this.sort) {
-        case "release_date":
+        case 'release_date':
           return [...this.filteredProducts].sort((first, second) => {
             return new Date(first.release_date).getTime() - new Date(second.sort_order).getTime();
           });
-        case "has_promotion":
-          return orderBy(this.filteredProducts, [this.sort, "sort_order"], ["desc", "asc"]);
-        case "sort_order":
-          return orderBy(this.filteredProducts, ["sort_order"], ["asc"]);
+        case 'has_promotion':
+          return orderBy(this.filteredProducts, [this.sort, 'sort_order'], ['desc', 'asc']);
+        case 'sort_order':
+          return orderBy(this.filteredProducts, ['sort_order'], ['asc']);
         default:
-          return orderBy(this.filteredProducts, ["sort_order"], ["asc"]);
+          return orderBy(this.filteredProducts, ['sort_order'], ['asc']);
       }
     }
   },
@@ -173,13 +179,14 @@ export default Vue.extend({
       const query: Record<string, string> = {};
 
       for (const keys in filters) {
-        query[keys] = filters[keys].join(",");
+        query[keys] = filters[keys].join(',');
       }
 
       query.sort = this.sort;
 
       this.$router.push({
-        path: this.$route.path, query
+        path: this.$route.path,
+        query
       });
     },
     buildFilter(filter: Record<string, string[]>) {

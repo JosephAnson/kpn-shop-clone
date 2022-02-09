@@ -15,18 +15,14 @@
       "src": "nuxt.config.ts",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": [
-          "api/**"
-        ]
+        "serverFiles": ["api/**"]
       }
     },
     {
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": [
-          "server-middleware/**"
-        ]
+        "serverFiles": ["server-middleware/**"]
       }
     }
   ]

@@ -25,12 +25,12 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import createPhoneFilterConfig from "~/modules/phones/utils/createPhoneFilterConfig";
-import { createFilterMultiSelectOptions } from "~/modules/phones/utils/createFilterMultiSelectOptions";
+import Vue from 'vue';
+import createPhoneFilterConfig from '~/modules/phones/utils/createPhoneFilterConfig';
+import { createFilterMultiSelectOptions } from '~/modules/phones/utils/createFilterMultiSelectOptions';
 
 export default Vue.extend({
-  name: "PhoneFilter",
+  name: 'PhoneFilter',
   props: {
     filteredProducts: {
       type: Array,
@@ -56,7 +56,7 @@ export default Vue.extend({
     setFilters(key: string, values: string[]) {
       Vue.set(this.newValue, key, values);
 
-      this.$emit("update:value", this.newValue);
+      this.$emit('update:value', this.newValue);
     }
   }
 });

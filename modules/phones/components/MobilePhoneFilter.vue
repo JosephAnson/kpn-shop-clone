@@ -51,7 +51,7 @@
                 <Collapse
                   v-for="(filter, key) of filterConfig"
                   :key="key"
-                  :label="key"
+                  :label="$i18n.t(`phone.filter.${key}`)"
                   class="mr-2 filter"
                 >
                   <MultiSelect
