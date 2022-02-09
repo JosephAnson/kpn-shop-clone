@@ -47,19 +47,12 @@ import { Context } from '@nuxt/types';
 import { NuxtError } from '@nuxt/types/app';
 import orderBy from 'lodash/orderBy';
 import Handset from '../components/Handset.vue';
-import { FilterOptions, Filters, Phone, SortOptions } from '~/modules/phones/types';
+import { FilterOptions, Phone, SortOptions } from '~/modules/phones/types';
 import PhoneFilter from '~/modules/phones/components/PhoneFilter.vue';
 import MobilePhoneFilter from '~/modules/phones/components/MobilePhoneFilter.vue';
-import { sortOptions } from '~/modules/phones/constants';
+import { filters, sortOptions } from '~/modules/phones/constants';
 
-const filters = {
-  manufacturer: [],
-  operating_system: [],
-  colors: [],
-  has_5g: [],
-  has_esim: [],
-  refurbished: []
-} as Filters;
+
 
 function getQueryArrayByKey(query: Record<string, string>, key: FilterOptions): string[] {
   return (key in query && query[key].split(',')) || [];

@@ -1,4 +1,4 @@
-import { SortOptions } from '~/modules/phones/types';
+import { Filters, SortOptions } from '~/modules/phones/types';
 
 export const sortOptions: { label: string; value: SortOptions }[] = [
   {
@@ -14,3 +14,12 @@ export const sortOptions: { label: string; value: SortOptions }[] = [
     value: 'has_promotion'
   }
 ];
+
+export const filters = {
+  manufacturer: [],
+  operating_system: [],
+  colors: [],
+  has_5g: [],
+  has_esim: [],
+  refurbished: []
+} as Filters;
