@@ -55,7 +55,7 @@
                   class="mr-2 filter"
                 >
                   <MultiSelect
-                    :value="newValue[key]"
+                    :value="newFilters[key]"
                     :options="createFilterMultiSelectOptions(filter)"
                     @update:value="setFilters(key, $event)"
                     >{{ key }}
@@ -89,7 +89,7 @@ export default Vue.extend({
       type: Array,
       required: true
     },
-    value: {
+    filters: {
       type: Object,
       required: true
     },
@@ -105,7 +105,7 @@ export default Vue.extend({
   data() {
     return {
       open: false,
-      newValue: this.value,
+      newFilters: this.filters,
       newSort: this.sort,
       sortOptions
     };
@@ -122,19 +122,19 @@ export default Vue.extend({
     newSort(sort) {
       this.$emit('update:sort', sort);
     },
-    newValue(value) {
+    newFilters(value) {
       this.$emit('update:value', value);
     }
   },
   methods: {
     clearAllFilters() {
-      Vue.set(this, 'newValue', {});
+      Vue.set(this, 'newFilters', {});
     },
     createFilterMultiSelectOptions,
     setFilters(key: string, values: string[]) {
-      Vue.set(this.newValue, key, values);
+      Vue.set(this.newFilters, key, values);
 
-      this.$emit('update:value', this.newValue);
+      this.$emit('update:value', this.newFilters);
     }
   }
 });

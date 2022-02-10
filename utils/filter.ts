@@ -16,6 +16,10 @@ export function cleanFilters(filter: Record<string, string[]>) {
   return query;
 }
 
+function keys<T>(object: T) {
+  return Object.keys(object) as (keyof T)[];
+}
+
 /***
  * If key from items exists in filters, we run the matching filter function
  * against the items and return the filtered version which is true for all filterFunctions
@@ -26,8 +30,7 @@ export function cleanFilters(filter: Record<string, string[]>) {
  */
 export function filter<FilterOptions extends string, Item>(
   items: Item[],
-  filterFunctions: FilterFunctions<FilterOptions, Item> &
-    Record<string, (item: Item, filters: string[]) => boolean>,
+  filterFunctions: FilterFunctions<FilterOptions, Item>,
   filters: Filters<FilterOptions>
 ) {
   const cleanedFilters = cleanFilters(filters);
@@ -35,10 +38,9 @@ export function filter<FilterOptions extends string, Item>(
   if (Object.values(cleanedFilters).every((item) => item.length <= 0)) return items;
 
   return items.filter((item) => {
-    return Object.keys(cleanedFilters)
+    return keys(filterFunctions)
       .map((key) => {
-        const filtersKeys = cleanedFilters[key];
-        return filterFunctions[key](item, filtersKeys);
+        return filterFunctions[key](item, cleanedFilters[key]);
       })
       .every((result) => result === true);
   });

@@ -5,19 +5,19 @@
     </p>
 
     <MobilePhoneFilter
-      :value="filters"
+      :filters="filters"
       :products="products"
       :total-phones="totalPhones"
       :sort="sort"
-      @update:value="filters = $event"
+      @update:filters="filters = $event"
       @update:sort="sort = $event"
     />
 
     <PhoneFilter
-      :value="filters"
+      :filters="filters"
       :products="filteredProducts"
       :sort="sort"
-      @update:value="filters = $event"
+      @update:filters="filters = $event"
       @update:sort="sort = $event"
     />
 
