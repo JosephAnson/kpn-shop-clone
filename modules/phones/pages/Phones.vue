@@ -3,30 +3,24 @@
     <p class="text-secondary-600 mt-6 mb-6 text-[32px] md:text-[44px]">
       <span>Kies uit </span> <span class="font-bold">{{ totalPhones }} telefones</span>
     </p>
+
     <MobilePhoneFilter
       :value="filters"
-      :products="filteredProducts"
+      :products="products"
       :total-phones="totalPhones"
       :sort="sort"
       @update:value="filters = $event"
       @update:sort="sort = $event"
     />
 
-    <div class="product-filters hidden justify-between rounded border bg-white p-3 md:flex">
-      <PhoneFilter :value="filters" :products="filteredProducts" @update:value="filters = $event" />
+    <PhoneFilter
+      :value="filters"
+      :products="filteredProducts"
+      :sort="sort"
+      @update:value="filters = $event"
+      @update:sort="sort = $event"
+    />
 
-      <div class="product-sort flex items-center">
-        <label class="mr-2">Sort</label>
-        <select
-          v-model="sort"
-          class="w-full cursor-default border border-gray-300 bg-white py-2 pl-3 pr-10 text-left focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
-        >
-          <option v-for="option in sortOptions" :key="option.key" :value="option.value">
-            {{ option.label }}
-          </option>
-        </select>
-      </div>
-    </div>
     <div class="products flex flex-wrap overflow-hidden md:-mx-3">
       <template v-for="product in sortedAndFilteredProducts">
         <Handset
@@ -51,12 +45,23 @@ import { FilterOptions, Phone, SortOptions } from '~/modules/phones/types';
 import PhoneFilter from '~/modules/phones/components/PhoneFilter.vue';
 import MobilePhoneFilter from '~/modules/phones/components/MobilePhoneFilter.vue';
 import { filters, sortOptions } from '~/modules/phones/constants';
-
-
+import { cleanFilters, filter, FilterFunctions } from '~/utils/filter';
 
 function getQueryArrayByKey(query: Record<string, string>, key: FilterOptions): string[] {
   return (key in query && query[key].split(',')) || [];
 }
+
+const filterFunctions: FilterFunctions<FilterOptions, Phone> = {
+  manufacturer: (item, filters) => filters.includes(item.manufacturer),
+  operating_system: (item, filters) => filters.includes(item.operating_system),
+  colors: (item, filters) => item.colors.some((item: string) => filters.includes(item)),
+  has_5g: (item, filters) =>
+    (item.has_5g && filters.includes('yes')) || (!item.has_5g && filters.includes('no')),
+  has_esim: (item, filters) =>
+    (item.has_esim && filters.includes('yes')) || (!item.has_esim && filters.includes('no')),
+  refurbished: (item, filters) =>
+    (item.refurbished && filters.includes('yes')) || (!item.refurbished && filters.includes('no'))
+};
 
 export default Vue.extend({
   name: 'PhonesPage',
@@ -105,7 +110,6 @@ export default Vue.extend({
     return {
       products: [] as Phone[],
       sort: sortOptions[0].value as SortOptions,
-      sortOptions,
       filters
     };
   },
@@ -114,37 +118,7 @@ export default Vue.extend({
       return (this as any).filteredProducts.length;
     },
     filteredProducts(): Phone[] {
-      const query = this.buildFilter(this.filters);
-      const keysWithArrays = ['colors'];
-      const keysWithYesNo = ['has_5g', 'has_esim', 'refurbished'];
-
-      return this.products.filter((product: Record<string, any>) => {
-        for (const key in query) {
-          // Skip if undefined
-          if (product[key] === undefined) {
-            return false;
-          }
-
-          // If property is array we should check each against the filter
-          else if (keysWithArrays.includes(key)) {
-            return product[key].some((item: string) => query[key].includes(item));
-          }
-
-          // If filter is yes or no we should check it matches the boolean equivalent
-          else if (keysWithYesNo.includes(key)) {
-            return (
-              (product[key] === true && query[key].includes('yes')) ||
-              (product[key] === false && query[key].includes('no'))
-            );
-          }
-
-          // Finally check it matches the single value of the property
-          else if (!query[key].includes(product[key])) {
-            return false;
-          }
-        }
-        return true;
-      });
+      return filter(this.products, filterFunctions, this.filters);
     },
     sortedAndFilteredProducts(): Phone[] {
       switch (this.sort) {
@@ -174,7 +148,7 @@ export default Vue.extend({
   },
   methods: {
     setQuery() {
-      const filters = this.buildFilter(this.filters);
+      const filters = cleanFilters(this.filters);
       const query: Record<string, string> = {};
 
       for (const keys in filters) {
@@ -187,15 +161,6 @@ export default Vue.extend({
         path: this.$route.path,
         query
       });
-    },
-    buildFilter(filter: Record<string, string[]>) {
-      const query: Record<string, string[]> = {};
-      for (const keys in filter) {
-        if (filter[keys].constructor === Array && filter[keys].length > 0) {
-          query[keys] = filter[keys];
-        }
-      }
-      return query;
     }
   }
 });
