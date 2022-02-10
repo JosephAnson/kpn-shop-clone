@@ -1,6 +1,6 @@
 <template>
   <div class='product-filters'>
-    <div class='hidden justify-between rounded border bg-white p-3 md:flex'>
+    <div class='hidden justify-between rounded border bg-white p-3 md:flex mb-2'>
       <div class='flex'>
         <div v-for='(filter, key) of filterConfig' :key='key' class='mr-2 filter'>
           <div class='group relative'>
@@ -37,14 +37,25 @@
         </select>
       </div>
     </div>
-    <div class='phone-filters__list'>
+    <div class='phone-filters__list flex flex-wrap'>
+      <div
+        v-for='filterItem in filterList'
+        :key='filterItem.key'
+        class='phone-filters__list__item border border-gray-600 mr-2 mb-2 p-2 flex content-center cursor-pointer'
+        @click='removeFilter(filterItem.key, filterItem.value)'>
+        <span>{{$i18n.t(`phone.filter.${filterItem.key}`)}}: {{ filterItem.value }}</span>
+        <a class='material-icons'> close </a>
+      </div>
 
+      <a v-if='filterList.length > 1' class='text-primary cursor-pointer underline mt-2 ml-3' @click='clearAllFilters'>
+        Alle filters verwijderen
+      </a>
     </div>
   </div>
 </template>
 
 <script lang='ts'>
-import Vue from 'vue';
+import Vue, { PropType } from 'vue';
 import createPhoneFilterConfig from '~/modules/phones/utils/createPhoneFilterConfig';
 import { createFilterMultiSelectOptions } from '~/modules/phones/utils/createFilterMultiSelectOptions';
 import { sortOptions } from '~/modules/phones/constants';
@@ -58,7 +69,7 @@ export default Vue.extend({
       required: true
     },
     filters: {
-      type: Object,
+      type: Object as PropType<Record<string, string[]>>,
       required: true
     }
   },
@@ -74,12 +85,27 @@ export default Vue.extend({
       return createPhoneFilterConfig((this as any).products);
     },
     filterList(): FilterListItem[] {
-      return [];
+      const filterList: FilterListItem[] = [];
+
+      for (const key in this.newFilters) {
+        this.newFilters[key].forEach(filter => {
+          filterList.push({
+            key,
+            value: filter
+          });
+        });
+      }
+
+      return filterList;
     }
+
   },
   watch: {
     sort(sort) {
       this.$emit('update:sort', sort);
+    },
+    newFilters(filters) {
+      this.$emit('update:newFilters', filters);
     }
   },
   methods: {
@@ -88,6 +114,13 @@ export default Vue.extend({
       Vue.set(this.newFilters, key, values);
 
       this.$emit('update:filters', this.newFilters);
+    },
+    clearAllFilters() {
+      this.$emit('clear-filters');
+    },
+    removeFilter(key: string, value: string) {
+      const index = this.newFilters[key].findIndex(item => item === value);
+      this.newFilters[key].splice(index, 1);
     }
   }
 });

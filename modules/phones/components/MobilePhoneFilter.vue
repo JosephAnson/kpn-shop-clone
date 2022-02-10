@@ -128,7 +128,7 @@ export default Vue.extend({
   },
   methods: {
     clearAllFilters() {
-      Vue.set(this, 'newFilters', {});
+      this.$emit('clear-filters');
     },
     createFilterMultiSelectOptions,
     setFilters(key: string, values: string[]) {

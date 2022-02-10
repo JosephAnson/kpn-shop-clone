@@ -30,7 +30,8 @@ function keys<T>(object: T) {
  */
 export function filter<FilterOptions extends string, Item>(
   items: Item[],
-  filterFunctions: FilterFunctions<FilterOptions, Item>,
+  filterFunctions: FilterFunctions<FilterOptions, Item> &
+    Record<string, (item: Item, filters: string[]) => boolean>,
   filters: Filters<FilterOptions>
 ) {
   const cleanedFilters = cleanFilters(filters);
@@ -38,9 +39,10 @@ export function filter<FilterOptions extends string, Item>(
   if (Object.values(cleanedFilters).every((item) => item.length <= 0)) return items;
 
   return items.filter((item) => {
-    return keys(filterFunctions)
+    return keys(cleanedFilters)
       .map((key) => {
-        return filterFunctions[key](item, cleanedFilters[key]);
+        const filtersKeys = cleanedFilters[key];
+        return filterFunctions[key](item, filtersKeys);
       })
       .every((result) => result === true);
   });

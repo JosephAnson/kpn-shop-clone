@@ -1,41 +1,43 @@
 <template>
-  <div class="container">
-    <p class="text-secondary-600 mt-6 mb-6 text-[32px] md:text-[44px]">
-      <span>Kies uit </span> <span class="font-bold">{{ totalPhones }} telefones</span>
+  <div class='container'>
+    <p class='text-secondary-600 mt-6 mb-6 text-[32px] md:text-[44px]'>
+      <span>Kies uit </span> <span class='font-bold'>{{ totalPhones }} telefones</span>
     </p>
 
     <MobilePhoneFilter
-      :filters="filters"
-      :products="products"
-      :total-phones="totalPhones"
-      :sort="sort"
-      @update:filters="filters = $event"
-      @update:sort="sort = $event"
+      :filters='filters'
+      :products='products'
+      :total-phones='totalPhones'
+      :sort='sort'
+      @update:filters='filters = $event'
+      @update:sort='sort = $event'
+      @clear-filters='clearFilters'
     />
 
     <PhoneFilter
-      :filters="filters"
-      :products="filteredProducts"
-      :sort="sort"
-      @update:filters="filters = $event"
-      @update:sort="sort = $event"
+      :filters='filters'
+      :products='filteredProducts'
+      :sort='sort'
+      @update:filters='filters = $event'
+      @update:sort='sort = $event'
+      @clear-filters='clearFilters'
     />
 
-    <div class="products flex flex-wrap overflow-hidden md:-mx-3">
-      <template v-for="product in sortedAndFilteredProducts">
+    <div class='products flex flex-wrap overflow-hidden md:-mx-3'>
+      <template v-for='product in sortedAndFilteredProducts'>
         <Handset
-          :key="product.id"
-          :name="product.name"
-          :manufacturer="product.manufacturer"
-          :variants="product.variants"
+          :key='product.id'
+          :name='product.name'
+          :manufacturer='product.manufacturer'
+          :variants='product.variants'
         />
       </template>
     </div>
-    <portal-target name="phones-footer"></portal-target>
+    <portal-target name='phones-footer'></portal-target>
   </div>
 </template>
 
-<script lang="ts">
+<script lang='ts'>
 import Vue from 'vue';
 import { Context } from '@nuxt/types';
 import { NuxtError } from '@nuxt/types/app';
@@ -147,6 +149,11 @@ export default Vue.extend({
     }
   },
   methods: {
+    clearFilters() {
+      for (const filter in this.filters) {
+        this.filters[filter as FilterOptions].splice(0);
+      }
+    },
     setQuery() {
       const filters = cleanFilters(this.filters);
       const query: Record<string, string> = {};
